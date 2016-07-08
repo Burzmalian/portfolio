@@ -1,0 +1,11 @@
+.section-intro {
+  background:url(/assets/prod/images/beach-bg.jpg);
+  background-size:cover;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .section-intro {
+          background:url(/assets/prod/images/beach-bg-md.jpg);
+          background-size:cover;
+        }
+}

@@ -1,0 +1,23 @@
+.gps_ring {
+    display: inline-block;
+    margin-left:-21px;
+    padding:17.5px;
+    border-right: 6px solid; 
+    border-bottom: 6px solid;
+    border-color: #222;
+    -webkit-animation: pulsate 2s ease-in-out;
+    opacity: 0;
+  -webkit-animation-delay: 1.3s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    position: absolute;
+    left: 50%;
+    top:100%;
+    animation-fill-mode: forwards;
+    transition:border-color .3s ease-in-out;
+}
+
+.gps_ring:hover {border-color:#5293A7;}
+@-webkit-keyframes pulsate {
+    0% {transform: scale(0.1, 0.1) rotate(45deg); ; opacity: 0.0;}
+    100% {transform: scale(1.2, 1.2) rotate(45deg); opacity: 1.0;}
+}
